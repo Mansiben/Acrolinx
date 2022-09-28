@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
     MatInputModule,
     MatTableModule,
+    MatPaginatorModule,
     MatSelectModule
   ],
   providers: [],
