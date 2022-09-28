@@ -1,7 +1,6 @@
 // app.component.ts
 import { Component, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-root',
@@ -22,10 +21,6 @@ export class AppComponent {
     // Object to create Filter for
     this.filterSelectObj = [
       {
-        name: 'ID',
-        columnProp: 'id',
-        options: []
-      }, {
         name: 'NAME',
         columnProp: 'name',
         options: []
@@ -50,7 +45,6 @@ export class AppComponent {
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
-    //this.dataSourceWithPageSize.paginator = this.paginatorPageSize;
   }
 
   ngOnInit() {
@@ -72,7 +66,7 @@ export class AppComponent {
     return uniqChk;
   }
 
-  // Get remote serve data using HTTP call
+  // Get remote serve data 
   getRemoteData() {
 
     const remoteDummyData = [
