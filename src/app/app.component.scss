@@ -1,3 +1,38 @@
-table{
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 600px;
     width: 100%;
-}
+  }
+
+  .mat-header-cell{
+    color: #098B8C;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+
+  .mat-cell{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  }
+
+  .title{
+    background-color: #098B8C; 
+    height: 40px; 
+  }
+
+  .bench{
+    text-align: center;
+    color: white; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+  }
+
+  .mat-paginator{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+  }

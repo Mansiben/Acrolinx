@@ -1,4 +1,4 @@
-<div>
+<div class="filterbox">
   <mat-form-field *ngFor="let filter of filterSelectObj" style="margin-left: 15px;">
     <mat-label>Filter {{filter.name}}</mat-label>
     <select matNativeControl name="{{filter.columnProp}}" [(ngModel)]="filter.modelValue"
